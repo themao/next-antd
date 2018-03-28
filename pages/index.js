@@ -10,8 +10,7 @@ export default class App extends React.Component {
         return <Layout>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-                <style dangerouslySetInnerHTML={{ __html: stylesheet_override }} />
+                <style dangerouslySetInnerHTML={{ __html: stylesheet + stylesheet_override }} />
             </Head>
 
             <Table
